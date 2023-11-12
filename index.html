@@ -9,16 +9,19 @@
 </head>
 <body>
     <div id="container">
-        <h2>Temperature Calculator</h2>
-        <label for="celsius">Celsius:</label>
-        <input type="text" id="celsius" placeholder="Enter temp. in Celsius">   
-        <label for="fahrenheit">Fahrenheit:</label>
-        <input type="text" id="fahrenheit" placeholder="Enter temp. in Fahrenheit">
+        <h2>Temperature Converter</h2>
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" placeholder="Enter temperature">
     
-        <button id="calculate">Calculate</button>
+        <select id="unit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+    
+        <button id="convert">Convert</button>
     
         <div id="result"></div>
-      </div>    
+      </div>
     <!--script-->
     <script src="/script/code .js"></script>
 </body>
