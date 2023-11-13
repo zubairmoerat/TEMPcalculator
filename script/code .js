@@ -1,28 +1,17 @@
-//input
-//function
-//output
-document.addEventListener('DOMContentLoaded', function () {
-    var convertButton = document.getElementById('convert');
-    convertButton.addEventListener('click', convertTemperature);
+document.addEventListener('DOMcontentLoaded', function(){
+  let convetrButton = document.getElementById('convert');
+  convetrButton.addEventListener('click', convertTemperature);
 
-    function convertTemperature() {
-      var temperatureInput = document.getElementById('temperature');
-      var unitSelect = document.getElementById('unit');
-      var resultDiv = document.getElementById('result');
-
-      var temperatureValue = parseFloat(temperatureInput.value);
-      var selectedUnit = unitSelect.value;
-
-      if (!isNaN(temperatureValue)) {
-        if (selectedUnit === 'celsius') {
-          var convertedFahrenheit = (temperatureValue * 9/5) + 32;
-          resultDiv.innerHTML = temperatureValue + ' Celsius is ' + convertedFahrenheit.toFixed(2) + ' Fahrenheit';
-        } else if (selectedUnit === 'fahrenheit') {
-          var convertedCelsius = (temperatureValue - 32) * 5/9;
-          resultDiv.innerHTML = temperatureValue + ' Fahrenheit is ' + convertedCelsius.toFixed(2) + ' Celsius';
-        }
-      } else {
-        resultDiv.innerHTML = 'Please enter a valid temperature.';
-      }
+  function convertTemperature(){
+    let temperatureInput = document.getElementById('temperature');
+    const resultDiv = document.getElementById('result');
+    let temperatureValue = parseFloat(temperatureInput.value);
+    
+    if (!isNaN(temperatureValue)) {
+      let convertTemperature = (temperatureValue * 9/5) + 32;
+      resultDiv.innerHTML = temperatureValue + 'Celsuis is ' + convertTemperature.toFixed(2) + 'Fahrenheit';
+    }else {
+      resultDiv.innerHTML = 'Please enter a valid temperature.'
     }
-  });
+  }
+});
