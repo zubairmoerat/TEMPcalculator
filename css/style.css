@@ -1,37 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap');
 *,
 *::after,
 *::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
-  }
-
-  #container {
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: #c3b9b9;
+}
+#container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 60px;
+  border: solid 2px #000;
+  background-image:linear-gradient( to right, red, yellow );
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#container h2{
+  text-decoration: underline;
+}
+#container h4{
+  padding-top: 20px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+#unit{
+  margin: 10px 20px 8%;
+}
